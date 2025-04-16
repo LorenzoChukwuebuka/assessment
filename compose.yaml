@@ -56,12 +56,12 @@ services:
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: assesment
+      MYSQL_DATABASE: assessment
       MYSQL_USER: root
       MYSQL_PASSWORD: secret
     volumes:
       - dbdata:/var/lib/mysql
-      - ./mysql/my.cnf:/etc/mysql/my.cnf:ro
+     # - ./mysql/my.cnf:/etc/mysql/my.cnf:ro
     networks:
       - app-network
     ports:

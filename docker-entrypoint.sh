@@ -16,7 +16,7 @@ echo "MySQL is up - ensuring database exists"
 # Use Laravel's DB facade to create the database
 php -r "try { \
   \$pdo = new PDO('mysql:host=db;port=3306', 'root', 'root'); \
-  \$pdo->exec('CREATE DATABASE IF NOT EXISTS assesment'); \
+  \$pdo->exec('CREATE DATABASE IF NOT EXISTS assessment'); \
   echo \"Database created successfully\n\"; \
 } catch (PDOException \$e) { \
   echo \"DB ERROR: {\$e->getMessage()}\n\"; \
