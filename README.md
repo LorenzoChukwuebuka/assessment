@@ -27,30 +27,32 @@ git clone https://github.com/your-username/your-repo-name.git
 cp .env.example .env
 ``` 
 
-2. ***Setup up the project:**
+2. **Setup up the project:**
 
 ```bash
 $ php artisan key:gen
 ```
-
 this will generate the app key
 
-4. *** Setup the .env variables *** 
+4. **Setup the .env variables**
 
 🐬 MySQL
 Host: db
-
 Port: 3306
-
 Database: assessment
-
 User: root
-
 Password: root
 
-5. *** Run the container *** 
+5. **SWAGGER** 
+on the .env file 
+```bash 
+L5_SWAGGER_CONST_HOST=http://localhost:8005
+```
+
+6. **Run the container** 
 docker-compose up -d --build
  
 
-3. Open your browser and go to:
-👉 http://localhost:8005
+7. Open your browser and go to:
+👉 http://localhost:8005/documentation
+to view the swagger docs
