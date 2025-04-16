@@ -37,11 +37,13 @@ this will generate the app key
 4. **Setup the .env variables**
 
 🐬 MySQL
+```bash 
 Host: db
 Port: 3306
 Database: assessment
 User: root
 Password: root
+```
 
 5. **SWAGGER** 
 on the .env file 
