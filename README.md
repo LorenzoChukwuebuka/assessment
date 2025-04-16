@@ -23,7 +23,7 @@ This project sets up a Laravel application with Docker, including Nginx, MySQL, 
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git https://github.com/LorenzoChukwuebuka/assessment.git
 cp .env.example .env
 ``` 
 
